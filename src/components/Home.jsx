@@ -133,6 +133,9 @@ const Styles = makeStyles(theme=>({
             width:"50%",
             textAlign:"center",
         }
+    },
+    paragraph_subitems:{
+        textAlign:"center"
     }
     
 }))
