@@ -223,7 +223,7 @@ const Home = () => {
                         <div className={classes.languages}>
                             <h6 className={classes.subtitles}>Acounting and Finance Technitian </h6>
                             <img className={classes.image_language} src="https://cdn1.iconfinder.com/data/icons/business-finance-vol-3-39/512/accountant_accounting_finance_business-512.png" alt="js" />
-                            <p className={classes.paragraph_subitems}>Can't you believe it? Well it's true</p>
+                            <p className={classes.paragraph_subitems}>Can't you believe it? <br /> Well it's true</p>
                         </div>
                         <div className={classes.languages}>
                             <h6 className={classes.subtitles}>English </h6>
