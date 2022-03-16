@@ -118,7 +118,9 @@ const Styles = makeStyles(theme=>({
     },
     title_develop:{
         [theme.breakpoints.down("sm")]:{
-            width:"50%"
+            width:"50%",
+            textAlign:"center",
+            fontSize:"70%"
         }
     }
     
