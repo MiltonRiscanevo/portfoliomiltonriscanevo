@@ -53,8 +53,11 @@ const Styles = makeStyles(theme=>({
     },
     paragraph:{
         width:"50%",
-        alignItems:"justifyContent",
-        fontSize: 25
+        textAlign:"center",
+        fontSize: 25,
+        [theme.breakpoints.down("sm")]:{
+            width:"100%"
+        }
     },
     container_row:{
         display:'flex',
