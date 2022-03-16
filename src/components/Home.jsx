@@ -120,7 +120,6 @@ const Styles = makeStyles(theme=>({
         [theme.breakpoints.down("sm")]:{
             width:"50%",
             textAlign:"center",
-            fontSize:"70%"
         }
     }
     
