@@ -2,7 +2,8 @@ import React from 'react'
 import { makeStyles } from '@material-ui/core'
 import CardProyect from './CardProyect'
 
-const Styles = makeStyles({
+
+const Styles = makeStyles(theme=>({
     segment1:{
         display:'flex',
         justifyContent:'center',
@@ -14,7 +15,15 @@ const Styles = makeStyles({
     image:{
         borderRadius:50,
         height:400,
-        margin:45
+        margin:45,
+        [theme.breakpoints.down('md')]:{
+            height: 300,
+            with: "70%"
+        },
+        [theme.breakpoints.down('sm')]:{
+            height: 200,
+            with: "50%"
+        },
     },
     container:{
         display:'flex',
@@ -106,9 +115,16 @@ const Styles = makeStyles({
     },
     segment4:{
         backgroundColor:'#FFCCFF'
+    },
+    title_develop:{
+        [theme.breakpoints.down("sm")]:{
+            width:"50%"
+        }
     }
     
-})
+}))
+
+
 
 const Home = () => {
     const classes = Styles()
@@ -116,7 +132,7 @@ const Home = () => {
     <>
         <div className={classes.segment1}>
             <div className={classes.container}  >
-                <h1>MILTON RISCANEVO <strong>Developer fullstack</strong></h1>
+                <h1 className={classes.title_develop}>MILTON RISCANEVO <strong>Developer fullstack</strong></h1>
                 <img className={classes.image} src="https://envri.eu/wp-content/uploads/2016/08/software-developer-copy.jpg" alt="develop" />
                 <h2>You don't make proyect, remember your make dreams</h2>
             </div>
