@@ -49,7 +49,12 @@ const Styles = makeStyles(theme=>({
         backgroundColor:"#CC99FF ",
         width:"75%",
         marginTop:"-50px",
-        borderRadius:"30%"
+        borderRadius:"30%",
+        [theme.breakpoints.down("sm")]:{
+            borderRadius:"20%",
+            width:"100%",
+            padding:"1%"
+        },
     },
     paragraph:{
         width:"50%",
@@ -65,7 +70,11 @@ const Styles = makeStyles(theme=>({
         alignItems:'center',
         flexDirection:'row',
         height:'100%',
-        padding: '3px'
+        padding: '3px',
+        [theme.breakpoints.down("sm")]:{
+            flexDirection:"column",
+
+        }
     },
     knowledge:{
         display:"flex",
