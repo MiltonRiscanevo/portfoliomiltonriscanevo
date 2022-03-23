@@ -77,7 +77,7 @@ const Styles = makeStyles(theme=>({
         borderBottom:"solid 4px #000000",
         margin:10,
         [theme.breakpoints.down('sm')]:{
-            fontSize:18
+            fontSize:15
         }
     },
     data_information:{
@@ -92,7 +92,7 @@ const Styles = makeStyles(theme=>({
         borderBottom:"solid 4px #000000",
         [theme.breakpoints.down('sm')]:{
             fontSize:18,
-            padding:15,
+            padding:8,
         }
     },
     data_information_paragrahp:{
@@ -100,7 +100,7 @@ const Styles = makeStyles(theme=>({
         padding: 35,
         [theme.breakpoints.down('sm')]:{
             fontSize:11,
-            padding: 18
+            padding: 5
         }
         
     }
@@ -159,9 +159,9 @@ const Curriculum = () => {
                         <h4 className={classes.data_information_title}>Studies</h4>
                         <p className={classes.data_information_paragrahp}>
                             <strong>University: Corporacion Universitaria Iberoamericana</strong> <br /> Software Enginner <br /> nov 2020 - dic 2023
-                            <br /><br />
+                            <br />
                             <strong>BootCamp: Academlo Academy to Science Computation</strong> <br /> Fullstack developer <br /> feb 2021 - abr 2022
-                            <br /><br />
+                            <br />
                             <strong>Technician: Instituto Colombiano de Aprendizaje</strong> <br /> Accounting and Finance <br /> ene 2012 - dic 2013
                         </p>
                     </div>
