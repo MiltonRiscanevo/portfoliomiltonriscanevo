@@ -1,32 +1,72 @@
 import * as React from 'react';
-import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
+import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
+import Ecommerce from './images/ecommerce.png'
+import { makeStyles } from '@material-ui/core';
 
 
-const card = (
-  <React.Fragment>
-    <CardContent>
-      <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
-        E-commerce proyect
-      </Typography>
-      <Typography variant="h5" component="div">
-        This E-commerce, have components React, and use Nodejs
-      </Typography>
-    </CardContent>
-    <CardActions>
-        <a href="https://goofy-kepler-d60c30.netlify.app/" target="_blank">See a little bit more</a>
-      {/* <Button component={Link} to="https://goofy-kepler-d60c30.netlify.app/" size="small">See a little bit more</Button> */}
-    </CardActions>
-  </React.Fragment>
-);
+const Styles =makeStyles({
+  root:{
+    width:'50%'
+  },
+  image:{
+    objectFit:'contain'
+  },
+  a_proyect:{
+    textDecoration:"none",
+    margin:10,
+    padding:10,
+    fontSize: 20,
+    fontWeight:"bold",
+    transition:" all .4s",
+    color:"#000000",
+    '&:hover':{
+      transitionDelay:".8s",
+      color:"#95A5A6"
+    }
+    
+  },
+  btn:{
+    display:"flex",
+    justifyContent:'center',
+    alignItems:'center',
+    cursor:"pointer",
+    borderRadius:15,
+    '&:hover':{
+      backgroundColor:"#EAEDED",
+      transitionDelay:".2s",
+      color:"white",
+    }
+  },
+ 
+})
+
 
 export default function CardProyect() {
+  const classes = Styles()
+  
   return (
-    <Box sx={{ minWidth: 275 }}>
-      <Card variant="outlined">{card}</Card>
-    </Box>
+    <Card className={classes.root} >
+      <CardMedia
+        className={classes.image}
+        component="img"
+        image={Ecommerce}
+        alt="E_comerce_project"
+      />
+      <CardContent>
+        <Typography gutterBottom variant="h5" component="div">
+          Ecommerce Project
+        </Typography>
+      </CardContent>
+      <CardActions>
+        <div className={classes.btn}>
+          <a className={classes.a_proyect} href="https://goofy-kepler-d60c30.netlify.app/" target="_blank" rel='noreferrer' > See more </a>
+        </div>
+        
+      </CardActions>
+    </Card>
   );
 }

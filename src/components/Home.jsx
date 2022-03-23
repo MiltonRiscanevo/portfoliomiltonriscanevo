@@ -1,6 +1,7 @@
 import React from 'react'
 import { makeStyles } from '@material-ui/core'
 import CardProyect from './CardProyect'
+import FooterNetwork from './FooterNetwork'
 
 
 const Styles = makeStyles(theme=>({
@@ -10,7 +11,10 @@ const Styles = makeStyles(theme=>({
         alignItems:'center',
         padding:"5%",
         backgroundColor:'#CCFFFF',
-        height:"45rem"
+        height:"45rem",
+        [theme.breakpoints.down('sm')]:{
+            height:"30rem"
+        }
     },
     image:{
         borderRadius:50,
@@ -38,7 +42,10 @@ const Styles = makeStyles(theme=>({
         padding:"5%",
         backgroundColor:'#CCCCFF',
         flexDirection:"column",
-        height:"45rem"
+        height:"45rem",
+        [theme.breakpoints.down('sm')]:{
+            height:"30rem"
+        }
     },
     segment3:{
         display:'flex',
@@ -116,29 +123,38 @@ const Styles = makeStyles(theme=>({
         width:"100%",
         justifyContent:"center",
         alignItems:"center",
-        fontSize:15
+        fontSize:15,
+        padding:10
     },
     section:{
         width:"100%",
         display:"flex",
         justifyContent:"center",
         alignItems:"center",
-        flexDirection:"column"
+        flexDirection:"column",
     },
     segment4:{
         backgroundColor:'#FFCCFF'
     },
     title_develop:{
         [theme.breakpoints.down("sm")]:{
-            width:"50%",
+            width:"100%",
             textAlign:"center",
         }
     },
     paragraph_subitems:{
         textAlign:"center"
-    }
-    
-}))
+    },
+    titles:{
+        display:"flex",
+        width:"100%",
+        justifyContent:"center",
+        alignItems:"center",
+        fontSize:30,
+        padding:10
+    }    
+}
+))
 
 
 
@@ -237,11 +253,11 @@ const Home = () => {
         </div>
         <div className={classes.segment4}>
             <div className={classes.container}  >
-                <h2>My proyects</h2>
+                <h2 className={classes.titles}>My proyects</h2>
                 <CardProyect/>
-                <h2>It's amazing create proyects, and improve my skills.</h2>
+                <h2 className={classes.titles}>It's amazing create proyects, and improve my skills.</h2>
                 <div>
-                <p>If you wanna to contact me check out my social network or send me an email</p>
+                <FooterNetwork/>
                 </div>
             </div>
             
