@@ -1,7 +1,8 @@
 import React from 'react'
 import {makeStyles} from '@material-ui/core'
 import Paper from '@mui/material/Paper';
-const Styles = makeStyles({
+
+const Styles = makeStyles(theme=>({
     header:{
         background: "rgb(0,0,0)",
         background: "radial-gradient(circle, rgba(0,0,0,0.7203256302521008) 11%, rgba(4,9,18,1) 40%, rgba(41,99,111,1) 100%)",
@@ -9,11 +10,17 @@ const Styles = makeStyles({
         display:"flex",
         justifyContent:"space-between",
         fontSize:25,
-        padding:10
+        padding:10,
+        [theme.breakpoints.down('sm')]:{
+            flexDirection:"column"
+        }
     },
     name:{
         fontSize:40,
-        fontWeight:"bold"
+        fontWeight:"bold",
+        [theme.breakpoints.down('sm')]:{
+            fontSize:25
+        }
     },
     container_data:{
         display:"flex",
@@ -31,7 +38,12 @@ const Styles = makeStyles({
         padding:10,
         borderRadius:"100%",
         border:"solid 4px #000000",
-        margin:10
+        margin:10,
+        [theme.breakpoints.down('sm')]:{
+            width:"95%",
+            padding:5,
+            margin:5
+        }
     },
     container_images:{
         width:"50%",
@@ -42,11 +54,19 @@ const Styles = makeStyles({
     image_language:{
         with:"20%",
         objectFit:"contain",
-        padding:"10%"
+        padding:"10%",
+        [theme.breakpoints.down('sm')]:{
+            width:"100%",
+            padding:"2%"
+        }
     },
     skill_data:{
         color:"white",
         padding:10,
+        [theme.breakpoints.down('sm')]:{
+            fontSize:11,
+            textAlign:'center'
+        }
     },
     skill_data_container:{
         padding:10
@@ -55,7 +75,10 @@ const Styles = makeStyles({
         fontSize:25,
         textAlign:"center",
         borderBottom:"solid 4px #000000",
-        margin:10
+        margin:10,
+        [theme.breakpoints.down('sm')]:{
+            fontSize:18
+        }
     },
     data_information:{
         width: "70%"
@@ -66,14 +89,23 @@ const Styles = makeStyles({
     data_information_title:{
         fontSize:30,
         padding: 30,
-        borderBottom:"solid 4px #000000"
+        borderBottom:"solid 4px #000000",
+        [theme.breakpoints.down('sm')]:{
+            fontSize:18,
+            padding:15,
+        }
     },
     data_information_paragrahp:{
         fontSize:20,
-        padding: 35
+        padding: 35,
+        [theme.breakpoints.down('sm')]:{
+            fontSize:11,
+            padding: 18
+        }
+        
     }
 
-})
+}))
 
 const Curriculum = () => {
     const classes = Styles()
@@ -92,7 +124,7 @@ const Curriculum = () => {
                     <div className={classes.container_images}>
                         <img className={classes.image_language} src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/200px-HTML5_logo_and_wordmark.svg.png" alt="js" />
                         <img className={classes.image_language} src="https://cdn-icons-png.flaticon.com/512/919/919826.png" alt="js" />
-                        <img className={classes.image_language} src="https://1000marcas.net/wp-content/uploads/2020/11/JavaScript-logo.png" alt="js" />
+                        <img className={classes.image_language} src="https://www.syloper.com/wp-content/uploads/js.png" alt="js" />
                         <img className={classes.image_language} src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Python.svg/800px-Python.svg.png" alt="js" />
                         <img className={classes.image_language} src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/React.svg/250px-React.svg.png" alt="js" />
                         <img className={classes.image_language} src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/800px-Node.js_logo.svg.png" alt="js" />
