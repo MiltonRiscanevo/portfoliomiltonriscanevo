@@ -160,7 +160,7 @@ const Curriculum = () => {
                         <p className={classes.data_information_paragrahp}>
                             <strong>University: Corporacion Universitaria Iberoamericana</strong> <br /> Software Enginner <br /> nov 2020 - dic 2023
                             <br />
-                            <strong>BootCamp: Academlo Academy to Science Computation</strong> <br /> Fullstack developer <br /> feb 2021 - abr 2022
+                            <strong>BootCamp: Academlo Academy to Science Computation</strong> <br /> Fullstack developer <br /> feb 2021 - feb 2022
                             <br />
                             <strong>Technician: Instituto Colombiano de Aprendizaje</strong> <br /> Accounting and Finance <br /> ene 2012 - dic 2013
                         </p>
