@@ -1,6 +1,7 @@
 import React from 'react'
 import {makeStyles} from '@material-ui/core'
 import Paper from '@mui/material/Paper';
+import Photo from './images/photocurriculum.jpg'
 
 const Styles = makeStyles(theme=>({
     header:{
@@ -120,7 +121,7 @@ const Curriculum = () => {
             </div>
             <div className={classes.container_data}>
                 <div className={classes.skills}>
-                    <img className={classes.image_profile} src="https://scontent-bog1-1.xx.fbcdn.net/v/t1.6435-9/78090965_3316490551757894_5796907798813999104_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=84a396&_nc_eui2=AeHM5oYZfb_Rf3bHpvb2vd5gK0qREerTlycrSpER6tOXJ5hOimXeqmwmBCEEi1mhcKZaV7Uva8zaInv716sN9Rnr&_nc_ohc=qgoIziz7gEMAX9YLaW7&_nc_oc=AQkyPkXQteMay7T3fGIpHjQYVG5AR0Gh7h_Iaz11K6QVy7lL2WQUswDIJ261n-SYm50AFexpRFZicBVzE3_di1MW&_nc_ht=scontent-bog1-1.xx&oh=00_AT--GCFhczJVjL5AxAhQa-GeDY4fmVzXtcHPjYveiioWRQ&oe=6255E350" alt="" />
+                    <img className={classes.image_profile} src={Photo} alt="profile" />
                     <div className={classes.container_images}>
                         <img className={classes.image_language} src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/200px-HTML5_logo_and_wordmark.svg.png" alt="js" />
                         <img className={classes.image_language} src="https://cdn-icons-png.flaticon.com/512/919/919826.png" alt="js" />
@@ -167,7 +168,9 @@ const Curriculum = () => {
                     </div>
                     <div className={classes.data_information_segment}> 
                         <h4 className={classes.data_information_title}>Experience</h4>
-                        <p className={classes.data_information_paragrahp}>I do projects to improve my skills, through them.</p>
+                        <p className={classes.data_information_paragrahp}>I do projects to improve my skills, through them:</p>
+                        <br />
+                        <p className={classes.data_information_paragrahp}> <strong>E-commerce:</strong>  This proyect was created by React, HTML, CSS and Nodejs backend</p>
                     </div>
                 </div>
             </div>
