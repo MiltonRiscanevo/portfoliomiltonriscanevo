@@ -208,7 +208,7 @@ const Segment1 = () => {
             <div className={classes.container}  >
                 <h1 className={classes.title_develop}>MILTON RISCANEVO <strong>Developer fullstack</strong></h1>
                 <img className={classes.image} src="https://scontent-bog1-1.xx.fbcdn.net/v/t1.6435-9/79318116_3399233583483590_3244656163572154368_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=84a396&_nc_eui2=AeH80URPdkzhIG78AtV0qEbx9Kz4CyBdhSX0rPgLIF2FJSN3bUSyFSu_6CPxPBqMcEfm7JG50wJFKdWuozeJ5HKm&_nc_ohc=aNo6sY1fgosAX_Ft9WG&_nc_ht=scontent-bog1-1.xx&oh=00_AT_m6eeArayCSQGKnin8sZ3gpPlPzEtOJcUoAiw_htjWhg&oe=6266FE52" alt="develop" />
-                <h2 className={classes.subtitle}>You don't make proyect, remember your make dreams</h2>
+                <h2 className={classes.subtitle}>You don't make projects, remember your make dreams</h2>
             </div>
             <Bubbles/>
             <div className={classes.cubes}>
