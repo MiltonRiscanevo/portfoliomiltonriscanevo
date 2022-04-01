@@ -154,7 +154,11 @@ const Curriculum = () => {
                         <h4 className={classes.data_information_title}>About me</h4>
                         <p className={classes.data_information_paragrahp}>Junior developer software student in Academlo boot camp, and study Engineer Software degree in Corporacion Universitaria Iberoamericana, actually 5 semester.
 
-                            I'm preparing for long time my position, follow a path to create skill's like knowledge in programing languages, such as Javascript, and Python, using technologies like, nodejs, react, django, database like postgres, and devtool such as Git, a another technologies necessaries to develop .</p> 
+                            I'm preparing for long time my position, follow a path to create skill's like knowledge in programing languages, such as Javascript, and Python, using technologies like, nodejs, react, django, database like postgres, and devtool such as Git, a another technologies necessaries to develop .
+                            <br />
+                            <br />
+                            I'm a person enthusiast, engaged, enjoy work whit persons who are dinamys, and able to contribute to the team.
+                        </p> 
                     </div>
                     <div className={classes.data_information_segment}>
                         <h4 className={classes.data_information_title}>Studies</h4>
@@ -170,7 +174,8 @@ const Curriculum = () => {
                         <h4 className={classes.data_information_title}>Experience</h4>
                         <p className={classes.data_information_paragrahp}>I do projects to improve my skills, through them:</p>
                         <br />
-                        <p className={classes.data_information_paragrahp}> <strong>E-commerce:</strong>  This proyect was created by React, HTML, CSS and Nodejs backend</p>
+                        <p className={classes.data_information_paragrahp}> <strong>E-commerce:</strong>  This proyect was created by React, HTML, CSS, javascript Es6 and Nodejs backend</p>
+                        <p className={classes.data_information_paragrahp}> <strong>Pokedex: </strong> I create a pokedex using the pokeApi it was created by React, HTML, CSS and javascript Es6  </p>
                     </div>
                 </div>
             </div>
