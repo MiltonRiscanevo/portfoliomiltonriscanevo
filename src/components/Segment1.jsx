@@ -48,6 +48,9 @@ const Styles = makeStyles(theme=>({
         zIndex:1,
         opacity:'.9',
         boxShadow: '2px 2px 10px 1px  rgba(34,195,169,1) ',
+        "&:hover":{
+            boxShadow: '2px 2px 10px 1px rgba(34,195,169,1)  ',
+        },
         [theme.breakpoints.down('md')]:{
             height: 300,
             with: "70%"
@@ -55,7 +58,7 @@ const Styles = makeStyles(theme=>({
         [theme.breakpoints.down('sm')]:{
             height: 150,
             with: "50%"
-        },
+        }
     },
     cube:{
         

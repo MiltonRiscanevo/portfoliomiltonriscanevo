@@ -149,9 +149,9 @@ const Segment2 = () => {
             <div className={classes.container}  >
                 <p className={classes.paragraph}>
                     Hi, I'm Milton, nice to meet you.
-                    When I look come back what is my work dream, no dude, be programer is great, because you have 
+                    When I think of my dream job, no dude, be programer is great, because you have 
                     part to dreams to another persons, and if you really work for your dreams, your have satisfaction,
-                    succedfull and this is the best sensations helped to do really dreams, and happy folks.
+                    successdful and this is the best sensations helped to do really dreams, and happy folks.
                 </p>
                 <VideoMedia/>               
             </div>
