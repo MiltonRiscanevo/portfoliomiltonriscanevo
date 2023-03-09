@@ -1,0 +1,26 @@
+.frame {
+    flex-shrink: 0;
+    flex: 1 0 0px;
+    width: 1px;
+    height: 27px;
+    display: block;
+    overflow: hidden;
+    position: relative;
+    border-radius: 0px 0px 0px 0px;
+  }
+.frame-3 {
+    flex-shrink: 0;
+    width: min-content; /* 390px */
+    height: min-content; /* 38px */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: visible;
+    position: relative;
+    padding: 0px 0px 0px 0px;
+    align-content: center;
+    flex-wrap: nowrap;
+    gap: 38;
+    border-radius: 0px 0px 0px 0px;
+  }

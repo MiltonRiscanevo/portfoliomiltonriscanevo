@@ -1,0 +1,98 @@
+
+.hero {
+  box-sizing: border-box;
+  flex-shrink: 0;
+  width: 1fr;
+  height: 700PX;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-evenly;
+  align-items: center;
+  padding: 110px 0px 110px 0px;
+  background: radial-gradient(50% 50% at 50% 50%, #545454 0%, rgb(0, 0, 0) 100%);
+  position: relative;
+  align-content: center;
+  flex-wrap: nowrap;
+  gap: 10;
+  border-radius: 0px 0px 0px 0px;
+}
+.rows {
+  flex-shrink: 0;
+  width: 600px;
+  height: 399px;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-evenly;
+  align-items: flex-start;
+  overflow: hidden;
+  position: relative;
+  padding: 0px 0px 0px 0px;
+  align-content: flex-start;
+  flex-wrap: nowrap;
+  gap: 20;
+  border-radius: 0px 0px 0px 0px;
+}
+.title_page1 {
+  flex-shrink: 0;
+  width: auto; /* 461px */
+  height: auto; /* 139px */
+  white-space: pre;
+  overflow: visible;
+  position: relative;
+  line-height: 1.2;
+}
+.phrase_page1{
+  flex-shrink: 0;
+  width: 512px;
+  height: auto; /* 132px */
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  word-break: break-word;
+  overflow: hidden;
+  position: relative;
+  opacity: 0.7;
+  font-weight: 300;
+  font-style: normal;
+  font-family: "Space Grotesk", sans-serif;
+  color: #ffffff;
+  font-size: 18px;
+  letter-spacing: -0.1px;
+  line-height: 150%;
+  text-align: left;
+}
+.image_page1 {
+  flex-shrink: 0;
+  width: 643px;
+  height: 619px;
+  overflow: hidden;
+  z-index: 1;
+  margin-top: 150px;
+  margin-left: 160px;
+  padding: 0px 0px 0px 0px;
+  align-content:center;
+  flex-wrap: nowrap;
+  gap: 10;
+  aspect-ratio: 1.038647342995169 / 1;
+  background-image: url("../images/profile.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  border-radius: 0px 0px 0px 0px;
+}
+.text {
+  flex-shrink: 0;
+  width: auto; /* 180px */
+  height: auto; /* 21px */
+  white-space: pre;
+  overflow: visible;
+  position: relative;
+  font-weight: 500;
+  font-style: normal;
+  font-family: "Space Grotesk", sans-serif;
+  color: #ffffff;
+  font-size: 14px;
+  letter-spacing: 0.52px;
+  line-height: 150%;
+  text-align: left;
+}
